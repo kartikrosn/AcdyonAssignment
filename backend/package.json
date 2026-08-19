@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "node --watch src/server.js",
-    "start": "node src/server.js",
+    "start": "prisma migrate deploy && node src/server.js",
     "db:migrate": "prisma migrate dev",
     "db:studio": "prisma studio",
     "db:generate": "prisma generate"
@@ -19,9 +19,8 @@
     "express-validator": "^7.1.0",
     "helmet": "^7.1.0",
     "pino": "^9.2.0",
-    "pino-pretty": "^11.2.1"
-  },
-  "devDependencies": {
+    "pino-pretty": "^11.2.1",
     "prisma": "^5.14.0"
-  }
+  },
+  "devDependencies": {}
 }
