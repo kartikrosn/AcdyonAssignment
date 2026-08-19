@@ -17,7 +17,7 @@ export default function PrivacyPolicyModal({ isOpen, onClose }) {
             </div>
             <div>
               <h2 className="text-base font-extrabold text-gray-900 leading-snug">Privacy Policy</h2>
-              <p className="text-xs text-gray-500 font-medium">JobPulse Data Management & External Source Principles</p>
+              <p className="text-xs text-gray-500 font-medium">jobPulse Data Management & External Source Principles</p>
             </div>
           </div>
           <button
@@ -33,21 +33,21 @@ export default function PrivacyPolicyModal({ isOpen, onClose }) {
           <section className="space-y-1.5">
             <h3 className="text-sm font-bold text-gray-900">1. Information We Collect</h3>
             <p>
-              JobPulse is a public job listings aggregator. We collect public career board data (job titles, descriptions, locations, and original application URLs) directly from official ATS APIs (Greenhouse, Lever, Ashby, Arbeitnow). We do not collect or request user personal credentials or passwords.
+              jobPulse is a public job listings aggregator. We collect public career board data (job titles, descriptions, locations, and original application URLs) directly from official ATS APIs (Greenhouse, Lever, Ashby, Arbeitnow). We do not collect or request user personal credentials or passwords.
             </p>
           </section>
 
           <section className="space-y-1.5">
             <h3 className="text-sm font-bold text-gray-900">2. Use of Ingested Job Data</h3>
             <p>
-              Ingested job records are normalized and stored in PostgreSQL solely to power search, filtering, deduplication, and resilience testing on the JobPulse platform.
+              Ingested job records are normalized and stored in PostgreSQL solely to power search, filtering, deduplication, and resilience testing on the jobPulse platform.
             </p>
           </section>
 
           <section className="space-y-1.5">
             <h3 className="text-sm font-bold text-gray-900">3. External Links & Applications</h3>
             <p>
-              JobPulse provides direct links to official employer career portals. Clicking &quot;Apply on Official Board&quot; redirects you directly to the verified employer listing page. JobPulse has no control over third-party career portals.
+              jobPulse provides direct links to official employer career portals. Clicking &quot;Apply on Official Board&quot; redirects you directly to the verified employer listing page. jobPulse has no control over third-party career portals.
             </p>
           </section>
 

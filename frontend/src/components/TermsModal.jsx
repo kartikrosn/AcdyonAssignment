@@ -17,7 +17,7 @@ export default function TermsModal({ isOpen, onClose }) {
             </div>
             <div>
               <h2 className="text-base font-extrabold text-gray-900 leading-snug">Terms of Service</h2>
-              <p className="text-xs text-gray-500 font-medium">JobPulse Usage Principles & API Service Terms</p>
+              <p className="text-xs text-gray-500 font-medium">jobPulse Usage Principles & API Service Terms</p>
             </div>
           </div>
           <button
@@ -33,14 +33,14 @@ export default function TermsModal({ isOpen, onClose }) {
           <section className="space-y-1.5">
             <h3 className="text-sm font-bold text-gray-900">1. Platform Scope</h3>
             <p>
-              JobPulse is a multi-source job listing discovery engine built with circuit breaker resilience, rate-limit handling, and priority source fallbacks.
+              jobPulse is a multi-source job listing discovery engine built with circuit breaker resilience, rate-limit handling, and priority source fallbacks.
             </p>
           </section>
 
           <section className="space-y-1.5">
             <h3 className="text-sm font-bold text-gray-900">2. Accuracy of Job Listings</h3>
             <p>
-              JobPulse ingests job postings directly from verified company ATS feeds (Greenhouse, Lever, Ashby, Arbeitnow). While we normalize and validate external URLs, job availability and application requirements are managed exclusively by hiring companies.
+              jobPulse ingests job postings directly from verified company ATS feeds (Greenhouse, Lever, Ashby, Arbeitnow). While we normalize and validate external URLs, job availability and application requirements are managed exclusively by hiring companies.
             </p>
           </section>
 
@@ -54,7 +54,7 @@ export default function TermsModal({ isOpen, onClose }) {
           <section className="space-y-1.5">
             <h3 className="text-sm font-bold text-gray-900">4. Modifications to Service</h3>
             <p>
-              JobPulse reserves the right to modify source adapters, priority fallback orders, and circuit breaker thresholds as necessary to maintain high availability.
+              jobPulse reserves the right to modify source adapters, priority fallback orders, and circuit breaker thresholds as necessary to maintain high availability.
             </p>
           </section>
         </div>

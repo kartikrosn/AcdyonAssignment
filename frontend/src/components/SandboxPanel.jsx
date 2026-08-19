@@ -306,7 +306,7 @@ export default function SandboxPanel({ onOverrideChange, sourceHealth = [], onCl
             </div>
             <div>
               <span className="text-gray-400 block">User-Agent Header</span>
-              <strong className="text-violet-700 font-semibold font-mono text-[10px]">JobPulse/1.0 (Truthful)</strong>
+              <strong className="text-violet-700 font-semibold font-mono text-[10px]">jobPulse/1.0 (Truthful)</strong>
             </div>
             <div>
               <span className="text-gray-400 block">Session Context</span>

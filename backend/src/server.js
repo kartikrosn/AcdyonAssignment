@@ -18,7 +18,7 @@ async function main() {
   const server = app.listen(config.port, '0.0.0.0', () => {
     logger.info(
       { port: config.port, env: config.nodeEnv },
-      `JobPulse backend listening on 0.0.0.0:${config.port}`
+      `jobPulse backend listening on 0.0.0.0:${config.port}`
     );
   });
 

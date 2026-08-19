@@ -8,7 +8,7 @@ export default function JobListItem({ job, onClick }) {
     : 'Recently';
 
   // Generate a distinct avatar background color per company
-  const companyKey = (job.company || 'JobPulse').toLowerCase();
+  const companyKey = (job.company || 'jobPulse').toLowerCase();
   const avatarColors = {
     stripe: 'bg-indigo-600 text-white',
     spotify: 'bg-emerald-600 text-white',

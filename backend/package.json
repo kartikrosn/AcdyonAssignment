@@ -1,7 +1,7 @@
 {
   "name": "jobpulse-backend",
   "version": "1.0.0",
-  "description": "JobPulse backend — real-data job ingestion from Greenhouse",
+  "description": "jobPulse backend — real-data job ingestion from Greenhouse",
   "main": "src/server.js",
   "type": "module",
   "scripts": {

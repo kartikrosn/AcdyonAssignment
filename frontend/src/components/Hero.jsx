@@ -8,7 +8,7 @@ export default function Hero({ onPrimaryCTA }) {
 
       {/* Subtitle */}
       <p className="mt-4 sm:mt-5 text-xs sm:text-base text-gray-600 max-w-2xl mx-auto leading-relaxed font-normal">
-        Engineering assessment project for Acdyon. Ingests, normalizes, and aggregates live tech job postings directly from ATS endpoints (Greenhouse, Lever, and Ashby) with automatic circuit breakers, rate-limiting backoff, and developer failure simulation.
+        Resilient multi-source job discovery engine for jobPulse. Ingests, normalizes, and aggregates live tech job postings directly from ATS endpoints (Greenhouse, Lever, and Ashby) with automatic circuit breakers, rate-limiting backoff, and developer failure simulation.
       </p>
 
       {/* Centered Black Pill CTA Button */}

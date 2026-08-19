@@ -1,6 +1,6 @@
-# Acdyon — Architecture & Ingestion Decisions
+# jobPulse — Architecture & Ingestion Decisions
 
-This document outlines the core technical decisions, trade-offs, verification steps, and operational rules governing the Acdyon multi-source ingestion platform.
+This document outlines the core technical decisions, trade-offs, verification steps, and operational rules governing the jobPulse multi-source ingestion platform.
 
 ---
 
@@ -8,7 +8,7 @@ This document outlines the core technical decisions, trade-offs, verification st
 
 The obvious alternative was browser-based scraping of restrictive job platforms. We rejected that for the live implementation because it adds brittle browser automation, CAPTCHA and fingerprinting concerns, higher operational cost, and a direct risk of violating platform access restrictions. The assignment also explicitly permits a low-risk public job source or a controlled sandbox.
 
-Instead, Acdyon uses source adapters for permitted public ATS/feed endpoints, with a common normalization layer and a resilient orchestrator. Requests are governed with pacing, per-source budgets, and bounded concurrency. A 429, timeout, schema failure, or restriction moves the source into the appropriate health/cooldown state and the orchestrator falls back to another eligible source. This gives us a real end-to-end ingestion pipeline while keeping the live demo within the assignment's scope guardrail.
+Instead, jobPulse uses source adapters for permitted public ATS/feed endpoints, with a common normalization layer and a resilient orchestrator. Requests are governed with pacing, per-source budgets, and bounded concurrency. A 429, timeout, schema failure, or restriction moves the source into the appropriate health/cooldown state and the orchestrator falls back to another eligible source. This gives us a real end-to-end ingestion pipeline while keeping the live demo within the assignment's scope guardrail.
 
 ### System Architecture Overview
 
@@ -52,7 +52,7 @@ flowchart TD
 
 ## 2. Time-limit trade-off
 
-Under the time limit, we prioritized a reliable multi-source ingestion and resilience path over building a full browser-scraping stack. We also chose not to implement identity/proxy rotation or anti-bot evasion; when a source becomes restrictive, JobPulse stops or cools it down and falls back rather than trying to defeat the restriction.
+Under the time limit, we prioritized a reliable multi-source ingestion and resilience path over building a full browser-scraping stack. We also chose not to implement identity/proxy rotation or anti-bot evasion; when a source becomes restrictive, jobPulse stops or cools it down and falls back rather than trying to defeat the restriction.
 
 With a real week, I would improve source coverage and observability, add more production-level tests and deployment hardening, and deepen the adapter contracts so each source can independently evolve without affecting the ingestion engine. I would still keep restricted-source access behind explicit permission and technical boundaries rather than bypassing anti-bot controls.
 
